@@ -4,8 +4,8 @@
       "buttons": {
         "userButton": {
           "menu": {
-            "settings": "Settings",
-            "settingsKey": "S",
+            "settings": "设置",
+            "settingsKey": "",
             "APIKeys": "API Keys",
             "logout": "Logout"
           }
@@ -14,7 +14,7 @@
     },
     "molecules": {
       "newChatButton": {
-        "newChat": "New Chat"
+        "newChat": "新的对话"
       },
       "tasklist": {
         "TaskList": {
@@ -34,10 +34,10 @@
         "confirm": "Confirm"
       },
       "settingsModal": {
-        "settings": "Settings",
-        "expandMessages": "Expand Messages",
-        "hideChainOfThought": "Hide Chain of Thought",
-        "darkMode": "Dark Mode"
+        "settings": "设置",
+        "expandMessages": "展开消息",
+        "hideChainOfThought": "隐藏CoT",
+        "darkMode": "暗色模式"
       },
       "detailsButton": {
         "using": "Using",
@@ -114,34 +114,34 @@
       "chat": {
         "history": {
           "index": {
-            "showHistory": "Show history",
-            "lastInputs": "Last Inputs",
-            "noInputs": "Such empty...",
-            "loading": "Loading..."
+            "showHistory": "历史输入",
+            "lastInputs": "最近输入",
+            "noInputs": "未查询到历史输入...",
+            "loading": "加载中..."
           }
         },
         "inputBox": {
           "input": {
-            "placeholder": "请输入要咨询的问题..."
+            "placeholder": "请输入你的问题..."
           },
           "speechButton": {
             "start": "Start recording",
             "stop": "Stop recording"
           },
           "SubmitButton": {
-            "sendMessage": "Send message",
-            "stopTask": "Stop Task"
+            "sendMessage": "发送",
+            "stopTask": "停止生成"
           },
           "UploadButton": {
-            "attachFiles": "Attach files"
+            "attachFiles": "添加附件（暂不支持）"
           },
           "waterMark": {
-            "text": "Powered By TJU.AI"
+            "text": "内容由天问大模型生成，请仔细甄别。Powered By TANKLAB"
           }
         },
         "Messages": {
           "index": {
-            "running": "Running",
+            "running": "生成中...",
             "executedSuccessfully": "executed successfully",
             "failed": "failed",
             "feedbackUpdated": "Feedback updated",
@@ -204,8 +204,9 @@
         }
       },
       "header": {
-        "chat": "Chat",
-        "readme": "Readme"
+        "chat": "开始对话",
+        "readme": "关于我们",
+        "version": "版本更新"
       }
     }
   },

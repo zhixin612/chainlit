@@ -6,6 +6,7 @@ import Env from 'pages/Env';
 import Home from 'pages/Home';
 import Login from 'pages/Login';
 import Readme from 'pages/Readme';
+import Version from 'pages/Version';
 import Thread from 'pages/Thread';
 
 export const router = createBrowserRouter([
@@ -16,6 +17,10 @@ export const router = createBrowserRouter([
   {
     path: '/readme',
     element: <Readme />
+  },
+  {
+    path: '/version',
+    element: <Version />
   },
   {
     path: '/env',

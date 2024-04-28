@@ -67,7 +67,7 @@ types-requests = "^2.31.0.2"
 types-aiofiles = "^23.1.0.5"
 
 [tool.mypy]
-python_version = "3.8"
+python_version = "3.11"
 
 
 [[tool.mypy.overrides]]
@@ -105,3 +105,8 @@ azure-storage-file-datalake = "^12.14.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "tsinghua-pypi"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "primary"
