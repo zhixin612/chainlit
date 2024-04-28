@@ -89,7 +89,7 @@ const FeedbackButtons = ({ message }: Props) => {
 
     const baseButtons = [
       () => (
-        <Tooltip title="Helpful">
+        <Tooltip title="赞！">
           <span>
             <IconButton
               color="inherit"
@@ -105,7 +105,7 @@ const FeedbackButtons = ({ message }: Props) => {
         </Tooltip>
       ),
       () => (
-        <Tooltip title="Not helpful">
+        <Tooltip title="踩！">
           <span>
             <IconButton
               color="inherit"

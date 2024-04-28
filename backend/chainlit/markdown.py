@@ -22,7 +22,7 @@ To modify the welcome screen, edit the `chainlit.md` file at the root of your pr
 
 def init_markdown(root: str):
     """Initialize the chainlit.md file if it doesn't exist."""
-    chainlit_md_file = os.path.join(root, "welcome.md")
+    chainlit_md_file = os.path.join(root, '.chainlit', "welcome.md")
 
     if not os.path.exists(chainlit_md_file):
         with open(chainlit_md_file, "w", encoding="utf-8") as f:
@@ -32,8 +32,8 @@ def init_markdown(root: str):
 
 def get_markdown_str(root: str, language: str):
     """Get the chainlit.md file as a string."""
-    translated_chainlit_md_path = os.path.join(root, "welcome.md")
-    default_chainlit_md_path = os.path.join(root, "welcome.md")
+    translated_chainlit_md_path = os.path.join(root, '.chainlit', "welcome.md")
+    default_chainlit_md_path = os.path.join(root, '.chainlit',"welcome.md")
 
     if os.path.exists(translated_chainlit_md_path):
         chainlit_md_path = translated_chainlit_md_path
@@ -53,7 +53,7 @@ def get_markdown_str(root: str, language: str):
 
 def init_version(root: str):
     """Initialize the chainlit.md file if it doesn't exist."""
-    chainlit_md_file = os.path.join(root, "version.md")
+    chainlit_md_file = os.path.join(root, '.chainlit', "version.md")
 
     if not os.path.exists(chainlit_md_file):
         with open(chainlit_md_file, "w", encoding="utf-8") as f:
@@ -63,8 +63,8 @@ def init_version(root: str):
 
 def get_version_str(root: str, language: str):
     """Get the chainlit.md file as a string."""
-    translated_chainlit_md_path = os.path.join(root, "version.md")
-    default_chainlit_md_path = os.path.join(root, "version.md")
+    translated_chainlit_md_path = os.path.join(root, '.chainlit', "version.md")
+    default_chainlit_md_path = os.path.join(root, '.chainlit', "version.md")
 
     if os.path.exists(translated_chainlit_md_path):
         chainlit_md_path = translated_chainlit_md_path

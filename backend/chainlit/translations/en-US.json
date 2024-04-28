@@ -7,7 +7,7 @@
             "settings": "设置",
             "settingsKey": "",
             "APIKeys": "API Keys",
-            "logout": "Logout"
+            "logout": "退出（清空对话）"
           }
         }
       }
@@ -173,33 +173,33 @@
               "feedbackNegative": "Feedback: Negative"
             },
             "SearchBar": {
-              "search": "Search"
+              "search": "搜索"
             }
           },
           "DeleteThreadButton": {
-            "confirmMessage": "This will delete the thread as well as it's messages and elements.",
-            "cancel": "Cancel",
-            "confirm": "Confirm",
-            "deletingChat": "Deleting chat",
-            "chatDeleted": "Chat deleted"
+            "confirmMessage": "彻底删除该对话？",
+            "cancel": "取消",
+            "confirm": "确认",
+            "deletingChat": "正在删除",
+            "chatDeleted": "删除完毕"
           },
           "index": {
-            "pastChats": "Past Chats"
+            "pastChats": "历史对话"
           },
           "ThreadList": {
-            "empty": "Empty...",
-            "today": "Today",
-            "yesterday": "Yesterday",
-            "previous7days": "Previous 7 days",
-            "previous30days": "Previous 30 days"
+            "empty": "无历史对话",
+            "today": "今日",
+            "yesterday": "昨日",
+            "previous7days": "7天内",
+            "previous30days": "30天内"
           },
           "TriggerButton": {
-            "closeSidebar": "Close sidebar",
-            "openSidebar": "Open sidebar"
+            "closeSidebar": "折叠侧边栏",
+            "openSidebar": "展开侧边栏"
           }
         },
         "Thread": {
-          "backToChat": "Go back to chat",
+          "backToChat": "返回对话",
           "chatCreatedOn": "This chat was created on"
         }
       },
