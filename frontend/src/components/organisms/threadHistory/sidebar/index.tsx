@@ -159,84 +159,86 @@ const _ThreadHistorySideBar = () => {
     });
   }, [firstInteraction]);
 
-  return (
-    <Box display="flex" position="relative">
-      <Drawer
-        className="chat-history-drawer"
-        anchor="left"
-        open={settings.isChatHistoryOpen}
-        variant={isMobile ? 'temporary' : 'persistent'}
-        hideBackdrop={!isMobile}
-        onClose={() => setChatHistoryOpen(false)}
-        PaperProps={{
-          ref: ref,
-          onScroll: handleScroll
-        }}
-        sx={{
-          width: settings.isChatHistoryOpen ? 'auto' : 0,
-          '& .MuiDrawer-paper': {
-            width: settings.isChatHistoryOpen ? DRAWER_WIDTH : 0,
-            position: 'inherit',
-            gap: 1,
-            display: 'flex',
-            padding: '0px 4px',
-            backgroundImage: 'none',
-            borderRight: 'none',
-            boxShadow: (theme) =>
-              theme.palette.mode === 'dark'
-                ? '0px 4px 20px 0px rgba(0, 0, 0, 0.20)'
-                : '0px 4px 20px 0px rgba(0, 0, 0, 0.05)'
-          }
-        }}
-      >
-        <Stack
-          sx={{
-            px: 2,
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            mt: 1.5
-          }}
-        >
-          <Typography
-            sx={{
-              fontSize: 16,
-              fontWeight: 600,
-              color: (theme) => theme.palette.text.primary
-            }}
-          >
-            <Translator path="components.organisms.threadHistory.sidebar.index.pastChats" />
-          </Typography>
-        </Stack>
-        <Filters />
-        {threadHistory ? (
-          <ThreadList
-            threadHistory={threadHistory}
-            error={error}
-            isFetching={isFetching}
-            isLoadingMore={isLoadingMore}
-            fetchThreads={fetchThreads}
-          />
-        ) : null}
-      </Drawer>
-      {!isMobile ? (
-        <Box
-          position="absolute"
-          sx={{
-            top: '50%',
-            transform: 'translateY(-100%)',
-            right: -30,
-            zIndex: 10
-          }}
-        >
-          <TriggerButton
-            onClick={() => setChatHistoryOpen(!settings.isChatHistoryOpen)}
-            open={settings.isChatHistoryOpen}
-          />
-        </Box>
-      ) : null}
-    </Box>
-  );
+  return null // hide the sidebar for now
+
+  // return (
+  //   <Box display="flex" position="relative">
+  //     <Drawer
+  //       className="chat-history-drawer"
+  //       anchor="left"
+  //       open={settings.isChatHistoryOpen}
+  //       variant={isMobile ? 'temporary' : 'persistent'}
+  //       hideBackdrop={!isMobile}
+  //       onClose={() => setChatHistoryOpen(false)}
+  //       PaperProps={{
+  //         ref: ref,
+  //         onScroll: handleScroll
+  //       }}
+  //       sx={{
+  //         width: settings.isChatHistoryOpen ? 'auto' : 0,
+  //         '& .MuiDrawer-paper': {
+  //           width: settings.isChatHistoryOpen ? DRAWER_WIDTH : 0,
+  //           position: 'inherit',
+  //           gap: 1,
+  //           display: 'flex',
+  //           padding: '0px 4px',
+  //           backgroundImage: 'none',
+  //           borderRight: 'none',
+  //           boxShadow: (theme) =>
+  //             theme.palette.mode === 'dark'
+  //               ? '0px 4px 20px 0px rgba(0, 0, 0, 0.20)'
+  //               : '0px 4px 20px 0px rgba(0, 0, 0, 0.05)'
+  //         }
+  //       }}
+  //     >
+  //       <Stack
+  //         sx={{
+  //           px: 2,
+  //           flexDirection: 'row',
+  //           justifyContent: 'space-between',
+  //           alignItems: 'center',
+  //           mt: 1.5
+  //         }}
+  //       >
+  //         <Typography
+  //           sx={{
+  //             fontSize: 16,
+  //             fontWeight: 600,
+  //             color: (theme) => theme.palette.text.primary
+  //           }}
+  //         >
+  //           <Translator path="components.organisms.threadHistory.sidebar.index.pastChats" />
+  //         </Typography>
+  //       </Stack>
+  //       <Filters />
+  //       {threadHistory ? (
+  //         <ThreadList
+  //           threadHistory={threadHistory}
+  //           error={error}
+  //           isFetching={isFetching}
+  //           isLoadingMore={isLoadingMore}
+  //           fetchThreads={fetchThreads}
+  //         />
+  //       ) : null}
+  //     </Drawer>
+  //     {!isMobile ? (
+  //       <Box
+  //         position="absolute"
+  //         sx={{
+  //           top: '50%',
+  //           transform: 'translateY(-100%)',
+  //           right: -30,
+  //           zIndex: 10
+  //         }}
+  //       >
+  //         <TriggerButton
+  //           onClick={() => setChatHistoryOpen(!settings.isChatHistoryOpen)}
+  //           open={settings.isChatHistoryOpen}
+  //         />
+  //       </Box>
+  //     ) : null}
+  //   </Box>
+  // );
 };
 
 const ThreadHistorySideBar = () => {
