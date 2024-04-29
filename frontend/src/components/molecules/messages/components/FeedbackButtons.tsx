@@ -162,7 +162,7 @@ const FeedbackButtons = ({ message }: Props) => {
         title={
           <Stack direction="row" alignItems="center" gap={2}>
             {showFeedbackDialog === 0 ? <DownIcon /> : <UpIcon />}
-            Add a comment
+            添加反馈内容（可选）
           </Stack>
         }
         content={
@@ -194,7 +194,7 @@ const FeedbackButtons = ({ message }: Props) => {
             }}
             autoFocus
           >
-            Submit feedback
+            提交
           </AccentButton>
         }
       />

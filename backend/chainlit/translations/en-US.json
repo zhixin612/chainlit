@@ -28,10 +28,10 @@
         "removeAttachment": "Remove attachment"
       },
       "newChatDialog": {
-        "createNewChat": "Create new chat?",
-        "clearChat": "This will clear the current messages and start a new chat.",
-        "cancel": "Cancel",
-        "confirm": "Confirm"
+        "createNewChat": "开启新的对话？",
+        "clearChat": "这会停止当前消息并创建新的对话",
+        "cancel": "取消",
+        "confirm": "确认"
       },
       "settingsModal": {
         "settings": "设置",
@@ -143,9 +143,9 @@
           "index": {
             "running": "生成中...",
             "executedSuccessfully": "executed successfully",
-            "failed": "failed",
-            "feedbackUpdated": "Feedback updated",
-            "updating": "Updating"
+            "failed": "失败",
+            "feedbackUpdated": "反馈已提交",
+            "updating": "正在提交"
           }
         },
         "dropScreen": {
@@ -168,9 +168,9 @@
         "sidebar": {
           "filters": {
             "FeedbackSelect": {
-              "feedbackAll": "Feedback: All",
-              "feedbackPositive": "Feedback: Positive",
-              "feedbackNegative": "Feedback: Negative"
+              "feedbackAll": "全部反馈",
+              "feedbackPositive": "反馈：赞！",
+              "feedbackNegative": "反馈：踩！"
             },
             "SearchBar": {
               "search": "搜索"
@@ -200,7 +200,7 @@
         },
         "Thread": {
           "backToChat": "返回对话",
-          "chatCreatedOn": "This chat was created on"
+          "chatCreatedOn": "这个对话创建于"
         }
       },
       "header": {
