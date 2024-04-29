@@ -154,7 +154,7 @@
         "index": {
           "failedToUpload": "Failed to upload",
           "cancelledUploadOf": "Cancelled upload of",
-          "couldNotReachServer": "Could not reach the server",
+          "couldNotReachServer": "天问正在升级，请稍后再试……",
           "continuingChat": "Continuing previous chat"
         },
         "settings": {
