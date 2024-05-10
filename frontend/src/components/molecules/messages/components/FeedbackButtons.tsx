@@ -124,7 +124,7 @@ const FeedbackButtons = ({ message }: Props) => {
 
     if (comment) {
       baseButtons.push(() => (
-        <Tooltip title="Feedback">
+        <Tooltip title="反馈内容">
           <span>
             <IconButton
               color="inherit"

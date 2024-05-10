@@ -17,7 +17,7 @@ export default function WaterMark() {
   return (
     <Stack mx="auto" className="watermark">
       <a
-        href="https://github.com/TJU-NSL"
+        href="https://cic.tju.edu.cn/"
         target="_blank"
         style={{
           display: 'flex',
