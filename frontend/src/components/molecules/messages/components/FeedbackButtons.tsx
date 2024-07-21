@@ -93,7 +93,7 @@ const FeedbackButtons = ({ message }: Props) => {
 
     const baseButtons = [
       () => (
-        <Tooltip title="Helpful">
+        <Tooltip title="赞！">
           <span>
             <IconButton
               color="inherit"
@@ -109,7 +109,7 @@ const FeedbackButtons = ({ message }: Props) => {
         </Tooltip>
       ),
       () => (
-        <Tooltip title="Not helpful">
+        <Tooltip title="踩！">
           <span>
             <IconButton
               color="inherit"
@@ -128,7 +128,7 @@ const FeedbackButtons = ({ message }: Props) => {
 
     if (comment) {
       baseButtons.push(() => (
-        <Tooltip title="Feedback">
+        <Tooltip title="反馈">
           <span>
             <IconButton
               color="inherit"
@@ -166,7 +166,7 @@ const FeedbackButtons = ({ message }: Props) => {
         title={
           <Stack direction="row" alignItems="center" gap={2}>
             {showFeedbackDialog === 0 ? <DownIcon /> : <UpIcon />}
-            Add a comment
+            添加反馈意见（可选）
           </Stack>
         }
         content={
@@ -198,7 +198,7 @@ const FeedbackButtons = ({ message }: Props) => {
             }}
             autoFocus
           >
-            Submit feedback
+            提交反馈
           </AccentButton>
         }
       />

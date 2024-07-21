@@ -44,7 +44,7 @@ const ClipboardCopy: React.FC<ClipboardCopyProps> = ({ value, edge }) => {
 
   return (
     <Tooltip
-      title={isCopied ? 'Copied to clipboard!' : 'Copy'}
+      title={isCopied ? '复制成功！' : '复制'}
       onClose={handleTooltipClose}
       sx={{ zIndex: 2 }}
     >
