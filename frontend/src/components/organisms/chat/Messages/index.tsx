@@ -32,31 +32,32 @@ const Messages = (): JSX.Element => {
   const callActionWithToast = useCallback(
     (action: IAction) => {
       const promise = callAction(action);
-      if (promise) {
-        toast.promise(promise, {
-          loading: `${t('components.organisms.chat.Messages.index.running')} ${
-            action.name
-          }`,
-          success: (res) => {
-            if (res.response) {
-              return res.response;
-            } else {
-              return `${action.name} ${t(
-                'components.organisms.chat.Messages.index.executedSuccessfully'
-              )}`;
-            }
-          },
-          error: (res) => {
-            if (res.response) {
-              return res.response;
-            } else {
-              return `${action.name} ${t(
-                'components.organisms.chat.Messages.index.failed'
-              )}`;
-            }
-          }
-        });
-      }
+      /** remove the action "running" and "finish" pop-up window **/
+      // if (promise) {
+      //   toast.promise(promise, {
+      //     loading: `${t('components.organisms.chat.Messages.index.running')} ${
+      //       action.name
+      //     }`,
+      //     success: (res) => {
+      //       if (res.response) {
+      //         return res.response;
+      //       } else {
+      //         return `${action.name} ${t(
+      //           'components.organisms.chat.Messages.index.executedSuccessfully'
+      //         )}`;
+      //       }
+      //     },
+      //     error: (res) => {
+      //       if (res.response) {
+      //         return res.response;
+      //       } else {
+      //         return `${action.name} ${t(
+      //           'components.organisms.chat.Messages.index.failed'
+      //         )}`;
+      //       }
+      //     }
+      //   });
+      // }
     },
     [callAction]
   );
